@@ -12,11 +12,15 @@ public class playercontroller : MonoBehaviour
     public GameObject bleehPrefab;
 
     private Transform gun_left;
+
+    private CameraScript cs;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         gun_left = transform.Find("gun_left");
+        cs = Camera.main.GetComponent<CameraScript>();
     }
 
     // Update is called once per frame
@@ -25,17 +29,23 @@ public class playercontroller : MonoBehaviour
         float v, h;
         v = Input.GetAxis("Vertical");
         h = Input.GetAxis("Horizontal");
-         controlls = new Vector2(h, v); 
+         controlls = new Vector2(h, v);
 
 
-        if(Mathf.Abs(transform.position.x) > 24)
+        float maxHorizontal = cs.worldWidith / 2;
+        float maxVertical = cs.worldHeight / 2;
+
+
+
+
+        if (Mathf.Abs(transform.position.x) > maxHorizontal)
         {
-            Vector3 newPos = new Vector3(transform.position.x * -1, 0, transform.position.z);
+            Vector3 newPos = new Vector3(transform.position.x * -0.95f, 0, transform.position.z);
             transform.position = newPos;
         }
-        if (Mathf.Abs(transform.position.z) > 19)
+        if (Mathf.Abs(transform.position.z) > maxVertical)
         {
-            Vector3 newPos = new Vector3(transform.position.x, 0, transform.position.z *-1);
+            Vector3 newPos = new Vector3(transform.position.x, 0, transform.position.z *-0.95f);
             transform.position = newPos;
         }
 
@@ -55,7 +65,7 @@ public class playercontroller : MonoBehaviour
        
         if(firebuttondown){
             GameObject bleeh = Instantiate(bleehPrefab, gun_left.position, Quaternion.identity);
-            bleeh.GetComponent<Rigidbody>().AddForce(bleeh.transform.forward, ForceMode.VelocityChange);
+            bleeh.GetComponent<Rigidbody>().AddForce(bleeh.transform.forward *15, ForceMode.VelocityChange);
             Destroy(bleeh, 5);
         }
         firebuttondown = false;

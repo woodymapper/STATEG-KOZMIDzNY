@@ -57,6 +57,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\playercontroller.cs" />
+    <Compile Include="Assets\CameraScript.cs" />
+    <Compile Include="Assets\AsteroidScript.cs" />
+    <Compile Include="Assets\LevelManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
