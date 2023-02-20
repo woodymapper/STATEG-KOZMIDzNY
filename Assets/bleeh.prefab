@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 8578797511794195675}
   - component: {fileID: 7712255540939375747}
   - component: {fileID: 7144646137600470929}
-  m_Layer: 0
+  - component: {fileID: -6272507421523943578}
+  m_Layer: 6
   m_Name: bleeh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,3 +115,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-6272507421523943578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 167595637167183041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a594fd7eb9ac84496d9f170a40ed90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

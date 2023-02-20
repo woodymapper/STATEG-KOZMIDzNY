@@ -58,21 +58,22 @@ public class playercontroller : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        
-        rb.AddForce (transform.forward*controlls.y, ForceMode.Acceleration);
+
+        rb.AddForce(transform.forward * controlls.y * acceleration, ForceMode.Acceleration);
         rb.AddTorque(transform.up * controlls.x * acceleration, ForceMode.Acceleration);
 
-       
-        if(firebuttondown){
-            GameObject bleeh = Instantiate(bleehPrefab, gun_left.position, Quaternion.identity);
-            bleeh.GetComponent<Rigidbody>().AddForce(bleeh.transform.forward *15, ForceMode.VelocityChange);
-            Destroy(bleeh, 5);
+
+        if (firebuttondown)
+        {
+            GameObject Bullet = Instantiate(bleehPrefab, gun_left.position, Quaternion.identity);
+            Bullet.transform.parent = null;
+            Bullet.GetComponent<Rigidbody>().AddForce(transform.forward * 100,
+                                                        ForceMode.VelocityChange);
+            firebuttondown = false;
         }
-        firebuttondown = false;
-
-
-
-
 
     }
+
+
+
 }
