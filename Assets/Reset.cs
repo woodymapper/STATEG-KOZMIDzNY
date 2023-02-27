@@ -7,6 +7,7 @@ public class Reset : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
+            Time.timeScale = 1;
             SceneManager.LoadScene("Main_menu");
         }
     }

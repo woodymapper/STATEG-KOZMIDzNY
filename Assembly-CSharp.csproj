@@ -59,10 +59,10 @@
     <Compile Include="Assets\LevelManager.cs" />
     <Compile Include="Assets\playercontroller.cs" />
     <Compile Include="Assets\CameraScript.cs" />
-    <Compile Include="Assets\AsteroidScript.cs" />
     <Compile Include="Assets\BulletScript.cs" />
-    <Compile Include="Assets\Reset.cs" />
+    <Compile Include="Assets\AsteroidScript.cs" />
     <Compile Include="Assets\GameManager.cs" />
+    <Compile Include="Assets\Reset.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
