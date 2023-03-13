@@ -309,17 +309,6 @@
       "DebugActionIndex": 13
     },
     {
-      "Annotation": "CopyFiles C:/Users/1157376/Desktop/Bob Marley did 911/My project (1)_Data/sharedassets0.resource",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Library/PlayerDataCache/Win64/Data/sharedassets0.resource"
-      ],
-      "Outputs": [
-        "C:/Users/1157376/Desktop/Bob Marley did 911/My project (1)_Data/sharedassets0.resource"
-      ],
-      "DebugActionIndex": 14
-    },
-    {
       "Annotation": "CopyFiles C:/Users/1157376/Desktop/Bob Marley did 911/My project (1)_Data/sharedassets1.assets",
       "ActionType": "CopyFiles",
       "Inputs": [
@@ -328,7 +317,7 @@
       "Outputs": [
         "C:/Users/1157376/Desktop/Bob Marley did 911/My project (1)_Data/sharedassets1.assets"
       ],
-      "DebugActionIndex": 15
+      "DebugActionIndex": 14
     },
     {
       "Annotation": "CopyFiles C:/Users/1157376/Desktop/Bob Marley did 911/My project (1)_Data/sharedassets1.assets.resS",
@@ -338,6 +327,17 @@
       ],
       "Outputs": [
         "C:/Users/1157376/Desktop/Bob Marley did 911/My project (1)_Data/sharedassets1.assets.resS"
+      ],
+      "DebugActionIndex": 15
+    },
+    {
+      "Annotation": "CopyFiles C:/Users/1157376/Desktop/Bob Marley did 911/My project (1)_Data/sharedassets1.resource",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win64/Data/sharedassets1.resource"
+      ],
+      "Outputs": [
+        "C:/Users/1157376/Desktop/Bob Marley did 911/My project (1)_Data/sharedassets1.resource"
       ],
       "DebugActionIndex": 16
     },
